@@ -3,8 +3,13 @@ import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
 
 function App() {
+  
 
+  const fetchNews = async (searchQuery) => {
+    const response = await fetch(`https://hn.algolia.com/api/v1/search_by_date?query=${searchQuery}`);
+    console.log(response)
 
+  }
 
 
 
@@ -24,7 +29,7 @@ function App() {
         </label>
 
 
-        <input className="btn-primary" type="submit" />
+        <input className="btn-primary" type="submit" onClick={fetchNews()} />
       </form>
     </div>
   );
