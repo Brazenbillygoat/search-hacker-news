@@ -10,23 +10,22 @@ function App() {
 
 
 
-  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <form>
+        <label>
+        <h4>Find the latest Hacker News: </h4>
+        <input className="searchbar-input-box"
+               type="text" 
+               placeholder="Search" 
+        />
+
+        </label>
+
+
+        <input className="btn-primary" type="submit" />
+      </form>
     </div>
   );
 }
