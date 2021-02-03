@@ -10,7 +10,6 @@ function App() {
   const fetchNews = async (e) => {
     e.preventDefault();
     const response = await fetch(`https://hn.algolia.com/api/v1/search_by_date?query=${currentQuery}`);
-    console.log(response)
     const results = await response.json();
     console.log(results);
 
