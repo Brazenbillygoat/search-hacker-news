@@ -1,8 +1,8 @@
 
-export default function updateQuery(state = "", action) {
+export default function query(state = "", action) {
   switch(action.type) {
     case 'UPDATEQUERY':
-     return state = {...state, query: action.payload}
+     return state = action.payload;
     default:
       return state;
   }

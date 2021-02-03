@@ -1,4 +1,4 @@
-const currentQuery = (value) => {
+const updateQuery = (value) => {
   return {
     type: 'UPDATEQUERY',
     payload: value
@@ -8,4 +8,4 @@ const currentQuery = (value) => {
 
 
 
-export { currentQuery };
+export { updateQuery };
