@@ -3,10 +3,11 @@ import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { updateQuery } from './actions/query';
 import { storeResults } from './actions/results';
+import SearchResults from './components/SearchResults';
+
 
 function App() {
   const currentQuery = useSelector(state => state.currentQuery);
-  const storedResults = useSelector(state => state.storedResults);
   const dispatch = useDispatch();
 
   const fetchNews = async (e) => {
@@ -39,17 +40,9 @@ function App() {
     );
   }
 
-  const displaySearchResults = () => {
-    return storedResults.map((result) => {
+  // const displaySearchResults = () => {
 
-      return (
-        <div>
-          <a href={result.story_url} target="blank"><h4 className="story-title">{result.story_title}</h4></a>
-          <p className="story-comment">{result.comment_text.length > 15 ? result.comment_text.substring(0,150) + "..." : result.comment_text}</p>
-        </div>
-      );
-    });
-  }
+  // }
 
 
 
@@ -57,7 +50,7 @@ function App() {
   return (
     <>
       {displaySearchForm()}
-      {displaySearchResults()}
+      <SearchResults />
     </>
   );
 }

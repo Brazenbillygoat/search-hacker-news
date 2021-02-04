@@ -10,7 +10,16 @@ margin-bottom: .5rem;
 }
 
 .story-comment {
-  font-size: .7rem;
-  margin: 0 3rem 1.5rem;
+  font-size: .8rem;
+  margin: 0 3rem .1rem;
+}
 
+.story-author {
+  display: inline-block;
+  font-size: .7rem;
+  margin-top: .1rem;
+}
+
+.story-separator {
+  margin: 5% 15%;
 }
