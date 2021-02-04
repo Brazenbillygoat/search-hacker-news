@@ -5,7 +5,4 @@ const storeResults = (value) => {
   }
 }
 
-
-
-
 export { storeResults };

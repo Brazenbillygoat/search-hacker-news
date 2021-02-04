@@ -12,5 +12,4 @@ const saveQuery = (value) => {
   }
 }
 
-
 export { updateQuery, saveQuery };
