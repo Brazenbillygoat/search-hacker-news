@@ -2,7 +2,8 @@
 export default function query(state = "", action) {
   switch(action.type) {
     case 'UPDATEQUERY':
-     return state = state + action.payload;
+      let newState = state + action.paylod;
+     return newState;
     default:
       return state;
   }
