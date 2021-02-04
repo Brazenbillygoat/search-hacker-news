@@ -43,7 +43,7 @@ function App() {
     return storedResults.map((result) => {
       return (
         <div>
-          <p>{result.story_title}Ho</p>
+          <a href={result.story_url} target="blank"><h4>{result.story_title}</h4></a>
         </div>
       );
     });
