@@ -19,7 +19,7 @@ function App() {
 
   const displaySearchForm = () => {
     return (
-      <div className="App">
+      <div className="searchbar-div">
         <div>  
           <form onSubmit={fetchNews}>
             <label>

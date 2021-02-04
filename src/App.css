@@ -4,6 +4,12 @@ body {
 }
 
 
+/* SEARCHBAR */
+.searchbar-div {
+  margin-bottom: 10%;
+}
+
+
 /* RESULTS */
 .story-title {
 margin-bottom: .5rem;
