@@ -41,9 +41,11 @@ function App() {
 
   const displaySearchResults = () => {
     return storedResults.map((result) => {
+
       return (
         <div>
           <a href={result.story_url} target="blank"><h4>{result.story_title}</h4></a>
+          <p className="comment-text">{result.comment_text.length > 15 ? result.comment_text.substring(0,150) : result.comment_text}</p>
         </div>
       );
     });
