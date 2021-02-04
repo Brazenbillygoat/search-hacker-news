@@ -1,7 +1,8 @@
 
-# Getting Started with Create React App
+# Getting Started with search-hacker-news
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Clone the code down into your local directory.
+Then navigate into that directory and run `npm install`.
 
 ## Available Scripts
 
