@@ -25,10 +25,12 @@ function App() {
             <label>
             <h4>Find the latest Hacker News: </h4>
             <input className="searchbar-input-box"
-                  type="text" 
-                  placeholder="Search"
-                  value={currentQuery}
-                  onChange={(e) => dispatch(updateQuery(e.target.value))}
+                   type="text" 
+                   placeholder="Search"
+                   value={currentQuery}
+                   name="searchbar"
+                   autocomplete="on"
+                   onChange={(e) => dispatch(updateQuery(e.target.value))}
             />
             </label>
             <input className="btn-primary" type="submit" value="Search" />
