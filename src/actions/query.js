@@ -5,7 +5,12 @@ const updateQuery = (value) => {
   }
 }
 
+const saveQuery = (value) => {
+  return {
+    type: 'SAVEQUERY',
+    payload: value
+  }
+}
 
 
-
-export { updateQuery };
+export { updateQuery, saveQuery };

@@ -1,7 +1,7 @@
 
 import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { updateQuery } from './actions/query';
+import { updateQuery, saveQuery } from './actions/query';
 import { storeResults } from './actions/results';
 import SearchResults from './components/SearchResults';
 
@@ -12,9 +12,13 @@ function App() {
 
   const fetchNews = async (e) => {
     e.preventDefault();
+    //saving results before fetching in case a connection error occurs
+    //user might still want to see their query as part of the history
+    dispatch(saveQuery(currentQuery));
     const response = await fetch(`https://hn.algolia.com/api/v1/search_by_date?query=${currentQuery}`);
     const results = await response.json();
     dispatch(storeResults(results.hits));
+    // dispatch(updateQuery(""));
   }
 
   const displaySearchForm = () => {
