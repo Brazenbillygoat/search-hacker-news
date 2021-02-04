@@ -1,5 +1,16 @@
-.App {
+
+body {
   text-align: center;
 }
 
 
+/* RESULTS */
+.story-title {
+margin-bottom: .5rem;
+}
+
+.story-comment {
+  font-size: .7rem;
+  margin: 0 3rem 1.5rem;
+
+}

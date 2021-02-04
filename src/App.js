@@ -44,8 +44,8 @@ function App() {
 
       return (
         <div>
-          <a href={result.story_url} target="blank"><h4>{result.story_title}</h4></a>
-          <p className="comment-text">{result.comment_text.length > 15 ? result.comment_text.substring(0,150) : result.comment_text}</p>
+          <a href={result.story_url} target="blank"><h4 className="story-title">{result.story_title}</h4></a>
+          <p className="story-comment">{result.comment_text.length > 15 ? result.comment_text.substring(0,150) + "..." : result.comment_text}</p>
         </div>
       );
     });
