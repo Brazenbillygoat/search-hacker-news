@@ -1,6 +1,8 @@
 export default function storeResults(state = [], action) {
   switch(action.type) {
     case 'STORERESULTS':
-      return state
+      return action.payload;
+    default:
+      return state;
   }
 }
