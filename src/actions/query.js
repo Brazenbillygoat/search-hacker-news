@@ -1,3 +1,4 @@
+
 const updateQuery = (value) => {
   return {
     type: 'UPDATEQUERY',
