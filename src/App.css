@@ -1,5 +1,7 @@
-
+/*I tired to keep my styling to a minimum and didn't pull in any frameworks because I
+thought at a certain point, going beyond the requirements becomes a distraction*/
 body {
+  background-color: blanchedalmond;
   text-align: center;
 }
 
