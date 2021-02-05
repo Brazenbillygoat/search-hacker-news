@@ -16,7 +16,7 @@ You will also see any lint errors in the console.
 ### UI
 
 Use the app to search for hacker news.
-You can also view your search history.
+You can also view your search history. On the left side.
 
 =======
 # search-hacker-news
