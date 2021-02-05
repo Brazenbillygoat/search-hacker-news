@@ -17,7 +17,7 @@ body {
 
 /* RESULTS */
 .search-results-div {
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 .story-title {
@@ -26,7 +26,7 @@ margin-bottom: .5rem;
 
 .story-comment {
   font-size: .8rem;
-  margin: 0 3rem .1rem;
+  margin: 0 3rem .1rem 25%;
 }
 
 .story-author {
@@ -43,8 +43,9 @@ margin-bottom: .5rem;
 /* SEARCH HISTORY  */
 .search-history-div {
   display: inline-block;
-  position: relative;
-  left: -35%;
+  position: absolute;
+  left: 5%;
+  top: 0;
 }
 
 .search-history-title {
