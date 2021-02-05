@@ -21,6 +21,7 @@ import SearchResults from './components/SearchResults';
 
 function App() {
   const currentQuery = useSelector(state => state.currentQuery);
+  const searchHistory = useSelector(state => state.searchHistory);
   const dispatch = useDispatch();
 
   const fetchNews = async (e) => {
@@ -64,8 +65,20 @@ function App() {
     );
   }
 
+  const displaySearchHistory = () => {
+    return searchHistory.map((query) => {
+      return (
+        <div className="search-history-div">
+          <h4>Search History</h4>
+          <p>{query}</p>
+        </div>
+      );
+    });
+  }
+
   return (
     <>
+      {displaySearchHistory()}
       {displaySearchForm()}
       <SearchResults />
     </>
