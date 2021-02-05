@@ -68,19 +68,21 @@ function App() {
   const displaySearchHistory = () => {
     return searchHistory.map((query) => {
       return (
-        <div className="search-history-div">
-          <h4>Search History</h4>
-          <p>{query}</p>
-        </div>
+        <p className="search-history-query">{query}</p>
       );
     });
   }
 
   return (
     <>
-      {displaySearchHistory()}
+      <div className="search-history-div">
+        <h4 className="search-history-title">Search History:</h4>
+        {displaySearchHistory()}
+      </div>
       {displaySearchForm()}
-      <SearchResults />
+      <div className="search-results-div">
+        <SearchResults />
+      </div>
     </>
   );
 }

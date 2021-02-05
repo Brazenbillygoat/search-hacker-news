@@ -6,11 +6,18 @@ body {
 
 /* SEARCHBAR */
 .searchbar-div {
-  margin-bottom: 10%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 40%;
 }
 
 
 /* RESULTS */
+.search-results-div {
+  margin-top: 5%;
+}
+
 .story-title {
 margin-bottom: .5rem;
 }
@@ -29,3 +36,21 @@ margin-bottom: .5rem;
 .story-separator {
   margin: 5% 15%;
 }
+
+
+/* SEARCH HISTORY  */
+.search-history-div {
+  display: inline-block;
+  position: relative;
+  left: -35%;
+}
+
+.search-history-title {
+  margin-bottom: .5rem;
+}
+
+.search-history-query {
+  font-size: .7rem;
+  margin: .3rem auto .3rem;
+}
+
